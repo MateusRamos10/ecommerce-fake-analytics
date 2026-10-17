@@ -1,0 +1,14 @@
+[
+{"id":"p01","name":"Aurora X1","category":"Celulares","price":3299.00,"description":"Smartphone de tela OLED de 6,5 polegadas com câmera tripla e bateria para dois dias de uso.","image":"assets/products/p01.webp"},
+{"id":"p02","name":"Aurora Lite","category":"Celulares","price":1499.00,"description":"Celular de entrada com tela de 90 Hz, 128 GB de armazenamento e carregamento rápido.","image":"assets/products/p02.webp"},
+{"id":"p03","name":"Atlas Pro 14","category":"Notebooks","price":5999.00,"description":"Notebook de 14 polegadas com processador de oito núcleos, 16 GB de memória e chassi em alumínio.","image":"assets/products/p03.webp"},
+{"id":"p04","name":"Atlas Air 13","category":"Notebooks","price":4199.00,"description":"Ultrafino de 1,1 kg com tela de 13 polegadas e até 14 horas de bateria.","image":"assets/products/p04.webp"},
+{"id":"p05","name":"Pulso Studio","category":"Áudio","price":649.00,"description":"Fone over-ear com cancelamento ativo de ruído e 40 horas de bateria.","image":"assets/products/p05.webp"},
+{"id":"p06","name":"Pulso Buds","category":"Áudio","price":349.00,"description":"Fones sem fio intra-auriculares com estojo de carga e resistência a respingos.","image":"assets/products/p06.webp"},
+{"id":"p07","name":"Ritmo Mini","category":"Áudio","price":289.00,"description":"Caixa de som Bluetooth compacta, à prova d'água, com 12 horas de reprodução.","image":"assets/products/p07.webp"},
+{"id":"p08","name":"Trama USB-C","category":"Acessórios","price":49.90,"description":"Cabo USB-C trançado de 2 metros para carga rápida e transferência de dados.","image":"assets/products/p08.webp"},
+{"id":"p09","name":"Carga 65W","category":"Acessórios","price":159.00,"description":"Carregador de parede com duas portas que alimenta celular e notebook ao mesmo tempo.","image":"assets/products/p09.webp"},
+{"id":"p10","name":"Grid 75","category":"Acessórios","price":499.00,"description":"Teclado mecânico compacto de 75% com switches táteis e conexão sem fio.","image":"assets/products/p10.webp"},
+{"id":"p11","name":"Casa Hub","category":"Casa Inteligente","price":399.00,"description":"Central que conecta lâmpadas, tomadas e sensores e responde a comandos de voz.","image":"assets/products/p11.webp"},
+{"id":"p12","name":"Lume Smart","category":"Casa Inteligente","price":79.90,"description":"Lâmpada LED Wi-Fi com 16 milhões de cores, controlada pelo celular.","image":"assets/products/p12.webp"}
+]
