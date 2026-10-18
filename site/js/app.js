@@ -8,6 +8,57 @@ const Cart={
   count(){return Cart.get().reduce((a,x)=>a+x.qty,0)},
   badge(){const b=$('[data-testid="cart-count"]');if(b)b.textContent=Cart.count()}
 };
+window.dataLayer = window.dataLayer || [];
+
+const Analytics = {
+  getTrafficType() {
+    const params = new URLSearchParams(location.search);
+    if (params.get('traffic_type')) {
+      sessionStorage.setItem('traffic_type', params.get('traffic_type'));
+      return params.get('traffic_type');
+    }
+    return sessionStorage.getItem('traffic_type') || (window.__PLAYWRIGHT_SIMULATED__ ? 'simulated' : 'human');
+  },
+  getEnv() {
+    const params = new URLSearchParams(location.search);
+    if (params.get('env')) {
+      sessionStorage.setItem('env', params.get('env'));
+      return params.get('env');
+    }
+    return sessionStorage.getItem('env') || (location.hostname.includes('localhost') ? 'dev' : 'prod');
+  },
+  getUserType() {
+    const firstVisit = localStorage.getItem('first_visit_date');
+    const today = new Date().toISOString().slice(0, 10);
+    if (!firstVisit) {
+      localStorage.setItem('first_visit_date', today);
+      return 'new';
+    }
+    return firstVisit === today ? 'new' : 'returning';
+  },
+  getDeviceProfile() {
+    const params = new URLSearchParams(location.search);
+    return params.get('device_profile') || (window.innerWidth <= 768 ? 'mobile' : 'desktop');
+  },
+  push(eventName, ecommerceData = {}, extraParams = {}) {
+    window.dataLayer.push({ ecommerce: null });
+    const currentUser = User();
+    const payload = {
+      event: eventName,
+      traffic_type: Analytics.getTrafficType(),
+      env: Analytics.getEnv(),
+      user_type: Analytics.getUserType(),
+      device_profile: Analytics.getDeviceProfile(),
+      ...(currentUser?.id ? { user_id: currentUser.id } : {}),
+      ...extraParams
+    };
+    if (ecommerceData && Object.keys(ecommerceData).length > 0) {
+      payload.ecommerce = ecommerceData;
+    }
+    window.dataLayer.push(payload);
+  }
+};
+
 let _p;const loadProducts=()=>_p||(_p=fetch('products.json').then(r=>r.json()));
 const User=()=>{try{return JSON.parse(localStorage.getItem('user'))}catch{return null}};
 
