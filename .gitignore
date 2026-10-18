@@ -5,3 +5,7 @@ Thumbs.db
 node_modules/
 .env
 *.log
+*-*.json
+ecommerce-fake-analytics-*.json
+*service_account*.json
+*credentials*.json
