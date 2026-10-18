@@ -9,3 +9,8 @@ node_modules/
 ecommerce-fake-analytics-*.json
 *service_account*.json
 *credentials*.json
+*CREDENCIAIS*
+*credenciais*
+*.secret*
+*.env*
+
