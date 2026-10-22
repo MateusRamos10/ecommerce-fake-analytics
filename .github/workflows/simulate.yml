@@ -1,0 +1,96 @@
+name: simulate
+
+on:
+  schedule:
+    # Horas em UTC (08h–23h em Brasília), com minutos diferentes para os horários não parecerem fixos
+    - cron: '7 11 * * *'
+    - cron: '41 12 * * *'
+    - cron: '23 13 * * *'
+    - cron: '52 14 * * *'
+    - cron: '14 15 * * *'
+    - cron: '36 16 * * *'
+    - cron: '58 17 * * *'
+    - cron: '9 18 * * *'
+    - cron: '31 19 * * *'
+    - cron: '47 20 * * *'
+    - cron: '18 21 * * *'
+    - cron: '26 22 * * *'
+    - cron: '5 23 * * *'
+    - cron: '44 0 * * *'
+    - cron: '19 1 * * *'
+    - cron: '33 2 * * *'
+  workflow_dispatch:
+    inputs:
+      sessions:
+        description: 'Forçar N sessões agora (vazio = seguir o plano do dia)'
+        required: false
+        default: ''
+      env:
+        description: 'Ambiente marcado nos eventos'
+        type: choice
+        options: [dev, prod]
+        default: dev
+
+concurrency:
+  group: simulate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SITE_URL: ${{ secrets.SITE_URL }}
+      SIM_ENV: ${{ inputs.env || 'prod' }}
+      FORCE_SESSIONS: ${{ inputs.sessions }}
+      STATE_PATH: state_branch/state.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Baixar o estado (branch state)
+        uses: actions/checkout@v4
+        with:
+          ref: state
+          path: state_branch
+
+      - name: Decidir se há sessões para rodar agora
+        id: gate
+        run: python3 simulator/main.py --gate
+
+      - name: Python
+        if: steps.gate.outputs.sessions != '0'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: simulator/requirements.txt
+
+      - name: Cache do Chromium
+        if: steps.gate.outputs.sessions != '0'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('simulator/requirements.txt') }}
+
+      - name: Instalar dependências
+        if: steps.gate.outputs.sessions != '0'
+        run: |
+          pip install -r simulator/requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Rodar sessões
+        if: steps.gate.outputs.sessions != '0'
+        run: python simulator/main.py
+
+      - name: Salvar o estado
+        if: steps.gate.outputs.sessions != '0' && always()
+        working-directory: state_branch
+        run: |
+          git config user.name "simulator-bot"
+          git config user.email "simulator-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || git commit -m "chore(state): $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin state

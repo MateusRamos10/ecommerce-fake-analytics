@@ -1,0 +1,1922 @@
+{
+  "path": "accounts/6383202951/containers/267471224/versions/3",
+  "accountId": "6383202951",
+  "containerId": "267471224",
+  "containerVersionId": "3",
+  "name": "v1.1 - user_id na tag de configuração",
+  "container": {
+    "path": "accounts/6383202951/containers/267471224",
+    "accountId": "6383202951",
+    "containerId": "267471224",
+    "name": "loja-eletronicos-fake",
+    "publicId": "GTM-PHWJVSK2",
+    "usageContext": [
+      "web"
+    ],
+    "fingerprint": "1792277419245",
+    "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6383202951/containers/267471224/workspaces?apiLink=container",
+    "features": {
+      "supportUserPermissions": true,
+      "supportEnvironments": true,
+      "supportWorkspaces": true,
+      "supportGtagConfigs": false,
+      "supportBuiltInVariables": true,
+      "supportClients": false,
+      "supportFolders": true,
+      "supportTags": true,
+      "supportTemplates": true,
+      "supportTriggers": true,
+      "supportVariables": true,
+      "supportVersions": true,
+      "supportZones": true,
+      "supportTransformations": false
+    },
+    "tagIds": [
+      "GTM-PHWJVSK2"
+    ]
+  },
+  "tag": [
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "19",
+      "name": "GA4 - Configuração",
+      "type": "googtag",
+      "parameter": [
+        {
+          "type": "template",
+          "key": "tagId",
+          "value": "G-LFHJTDDHB1"
+        },
+        {
+          "type": "list",
+          "key": "configSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_id"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_id}}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792664591257",
+      "firingTriggerId": [
+        "2147479553"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "20",
+      "name": "GA4 - view_item_list",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "view_item_list"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792306853926",
+      "firingTriggerId": [
+        "9"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "21",
+      "name": "GA4 - select_item",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "select_item"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792306864101",
+      "firingTriggerId": [
+        "10"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "22",
+      "name": "GA4 - view_item",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "view_item"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792306875841",
+      "firingTriggerId": [
+        "11"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "23",
+      "name": "GA4 - add_to_cart",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cart_value"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - cart_value}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "add_to_cart"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792306887216",
+      "firingTriggerId": [
+        "12"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "24",
+      "name": "GA4 - view_cart",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cart_value"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - cart_value}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "abandonment_stage"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - abandonment_stage}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "view_cart"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792306899222",
+      "firingTriggerId": [
+        "13"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "25",
+      "name": "GA4 - begin_checkout",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cart_value"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - cart_value}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "abandonment_stage"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - abandonment_stage}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "begin_checkout"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792306912692",
+      "firingTriggerId": [
+        "14"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "26",
+      "name": "GA4 - add_shipping_info",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cart_value"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - cart_value}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "abandonment_stage"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - abandonment_stage}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "add_shipping_info"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792306927275",
+      "firingTriggerId": [
+        "15"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "27",
+      "name": "GA4 - add_payment_info",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cart_value"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - cart_value}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "abandonment_stage"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - abandonment_stage}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "payment_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - payment_type}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "add_payment_info"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792326488915",
+      "firingTriggerId": [
+        "16"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "28",
+      "name": "GA4 - purchase",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cart_value"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - cart_value}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "purchase"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792306952911",
+      "firingTriggerId": [
+        "17"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "32",
+      "name": "GA4 - login",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "method"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - method}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_id"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_id}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "login"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792315335661",
+      "firingTriggerId": [
+        "18"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "tagId": "33",
+      "name": "GA4 - page_exit",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "boolean",
+          "key": "sendEcommerceData",
+          "value": "true"
+        },
+        {
+          "type": "template",
+          "key": "getEcommerceDataFrom",
+          "value": "dataLayer"
+        },
+        {
+          "type": "list",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "traffic_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - traffic_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "env"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - env}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "user_type"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - user_type}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "device_profile"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - device_profile}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "abandonment_stage"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - abandonment_stage}}"
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "map": [
+                {
+                  "type": "template",
+                  "key": "parameter",
+                  "value": "cart_value"
+                },
+                {
+                  "type": "template",
+                  "key": "parameterValue",
+                  "value": "{{DL - cart_value}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "template",
+          "key": "eventName",
+          "value": "page_exit"
+        },
+        {
+          "type": "template",
+          "key": "measurementIdOverride",
+          "value": "G-LFHJTDDHB1"
+        }
+      ],
+      "fingerprint": "1792315336234",
+      "firingTriggerId": [
+        "31"
+      ],
+      "consentSettings": {
+        "consentStatus": "notSet"
+      }
+    }
+  ],
+  "trigger": [
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "9",
+      "name": "CE - view_item_list",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "view_item_list"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306464652"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "10",
+      "name": "CE - select_item",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "select_item"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306477678"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "11",
+      "name": "CE - view_item",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "view_item"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306486170"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "12",
+      "name": "CE - add_to_cart",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "add_to_cart"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306667417"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "13",
+      "name": "CE - view_cart",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "view_cart"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306673304"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "14",
+      "name": "CE - begin_checkout",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "begin_checkout"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306679334"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "15",
+      "name": "CE - add_shipping_info",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "add_shipping_info"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306686443"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "16",
+      "name": "CE - add_payment_info",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "add_payment_info"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306692093"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "17",
+      "name": "CE - purchase",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "purchase"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306697916"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "18",
+      "name": "CE - login",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "login"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792306703320"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "triggerId": "31",
+      "name": "CE - page_exit",
+      "type": "customEvent",
+      "customEventFilter": [
+        {
+          "type": "equals",
+          "parameter": [
+            {
+              "type": "template",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "template",
+              "key": "arg1",
+              "value": "page_exit"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1792315270222"
+    }
+  ],
+  "variable": [
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "3",
+      "name": "DL - traffic_type",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "traffic_type"
+        }
+      ],
+      "fingerprint": "1792305584784"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "4",
+      "name": "DL - env",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "env"
+        }
+      ],
+      "fingerprint": "1792305683229"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "5",
+      "name": "DL - abandonment_stage",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "abandonment_stage"
+        }
+      ],
+      "fingerprint": "1792305692368"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "6",
+      "name": "DL - user_type",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "user_type"
+        }
+      ],
+      "fingerprint": "1792305797077"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "7",
+      "name": "DL - device_profile",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "device_profile"
+        }
+      ],
+      "fingerprint": "1792305919510"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "8",
+      "name": "DL - cart_value",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "cart_value"
+        }
+      ],
+      "fingerprint": "1792306144284"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "29",
+      "name": "DL - method",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "method"
+        }
+      ],
+      "fingerprint": "1792315269696"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "30",
+      "name": "DL - user_id",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "user_id"
+        }
+      ],
+      "fingerprint": "1792315269803"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "variableId": "35",
+      "name": "DL - payment_type",
+      "type": "v",
+      "parameter": [
+        {
+          "type": "integer",
+          "key": "dataLayerVersion",
+          "value": "2"
+        },
+        {
+          "type": "template",
+          "key": "name",
+          "value": "payment_type"
+        }
+      ],
+      "fingerprint": "1792326423335"
+    }
+  ],
+  "builtInVariable": [
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "type": "pageUrl",
+      "name": "Page URL"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "type": "pageHostname",
+      "name": "Page Hostname"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "type": "pagePath",
+      "name": "Page Path"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "type": "referrer",
+      "name": "Referrer"
+    },
+    {
+      "accountId": "6383202951",
+      "containerId": "267471224",
+      "type": "event",
+      "name": "Event"
+    }
+  ],
+  "fingerprint": "1792664597491",
+  "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6383202951/containers/267471224/versions/3?apiLink=version"
+}
