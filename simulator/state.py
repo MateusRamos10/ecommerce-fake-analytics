@@ -17,6 +17,8 @@ def load():
             S = json.load(f)
     except Exception:  # arquivo vazio, inexistente ou inválido
         S = {}
+    if not isinstance(S, dict): # o branch state nasceu como []
+        S = {}
     S.setdefault("version", 1)
     S.setdefault("day", {"date": None, "executed": 0})
     S.setdefault("users", [])
