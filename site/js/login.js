@@ -8,7 +8,14 @@
   app.innerHTML=`<form class="form" id="f" data-testid="login-form"><label>E-mail<input name="email" type="email" required data-testid="login-email"></label><label>Senha<input name="senha" type="password" required data-testid="login-password"></label><p class="cat">Login simulado: qualquer e-mail e senha funcionam.</p><button class="btn" data-testid="login-submit">Entrar</button></form>`;
   $('#f').onsubmit=e=>{
     e.preventDefault();
-    localStorage.setItem('user',JSON.stringify({id:'u_'+Math.random().toString(36).slice(2,10),email:new FormData(e.target).get('email')}));
+    const fd=new FormData(e.target);
+    const userId='u_'+Math.random().toString(36).slice(2,10);
+    const email=fd.get('email');
+    localStorage.setItem('user',JSON.stringify({id:userId,email}));
+
+    // login event
+    Analytics.push('login',{},{method:'email',user_id:userId});
+
     location.href='index.html';
   };
 })();
